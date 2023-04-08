@@ -1,0 +1,36 @@
+:root{
+    --top-nav-bar: rgb(121, 184, 154);
+    --link-font: 'Teko', sans-serif;
+}
+body{
+    background-color: rgb(226, 224, 224);
+    padding: 0px;
+    margin: 0px;
+}
+.top_bar{
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    font-family: var(--link-font);
+    background-color: var(--top-nav-bar);
+    text-decoration: none;
+    transition:all 0.5s linear;
+}
+.top_bar:hover{
+    text-decoration: underline;
+    background-color: rgb(143, 218, 159);
+}
+.main_first{
+    width: 80%;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    
+    margin:10vh auto;
+    border: 1px solid black;
+    background-color: rgb(156, 145, 216);
+    border-radius:10px ;
+    box-shadow: 5px 6px  rgb(86, 151, 137);
+}
+.main_first img{
+    width: 500px;
+}
