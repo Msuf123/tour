@@ -2,6 +2,7 @@
     --top-nav-bar: rgb(121, 184, 154);
     --link-font: 'Teko', sans-serif;
     --heading: 'Alkatra', cursive;
+    --image:'./back_images/38119.jpg'
 }
 body{
     background-color: rgb(226, 224, 224);
@@ -132,10 +133,10 @@ body{
     
     
 }
-.three_div div{
+.places{
     width:30vw;
     height: 25vh;
-    background-image: url(second.jpg);
+    background-image: url('second.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px ;
@@ -144,40 +145,73 @@ body{
     align-items: center;
     justify-content: space-around;
     border: 2px solid black;
+    opacity: 0.9;
+    
 }
 .headings{
-    visibility: hidden;
+   display: none;
+   color: aliceblue;
+}
+
+.three_div div:hover{
+    background-image:url('./back_images/38119.jpg');
+}
+.headings{
+    visibility: visible;
 }
 
 #pondi{
     background-image: url('./back_images/pondi.jpg');
 }
+#pondi:hover{
+    background-image:url('./back_images/38119.jpg');
+}
 #tamil{
     background-image: url('./back_images/tamil.jpg');
+}
+#tamil:hover{
+    background-image:url('./back_images/38119.jpg');
 }
 #capri{
     background-image: url('./back_images/Capri.jpg');
 }
+#capri:hover{
+    background-image:url('./back_images/38119.jpg');
+}
 #mad{
     background-image: url('./back_images/south_af.jpg');
+}
+#mad:hover{
+    background-image:url('./back_images/38119.jpg');
 }
 #cape{
     background-image: url('./back_images/cape.jpg');
 }
+#cape:hover{
+    background-image:url('./back_images/38119.jpg');
+}
 #raj{
     background-image: url('./back_images/Raj.jpg');
+}
+#raj:hover{
+    background-image:url('./back_images/38119.jpg');
 }
 #sikkim{
     background-image: url('./back_images/sikkim.jpg');
 }
+#sikkim:hover{
+    background-image:url('./back_images/38119.jpg');
+}
 #odisha{
     background-image: url('./back_images/odisha.jpg');
 }
-.three_div div h1,.three_div div h2{
-    
-    padding: 0px;
-    border: 2px solid black;
+#odisha:hover{
+    background-image:url('./back_images/38119.jpg');
 }
+.link{
+    color: aliceblue;
+}
+
 .bottom{
     background-color: rgb(47, 46, 48);
     color: white;
