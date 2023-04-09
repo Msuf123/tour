@@ -1,6 +1,7 @@
 :root{
     --top-nav-bar: rgb(121, 184, 154);
     --link-font: 'Teko', sans-serif;
+    --heading: 'Alkatra', cursive;
 }
 body{
     background-color: rgb(226, 224, 224);
@@ -16,21 +17,178 @@ body{
     text-decoration: none;
     transition:all 0.5s linear;
 }
+.top_bar a{
+    text-decoration: none;
+    color: black;
+}
 .top_bar:hover{
     text-decoration: underline;
     background-color: rgb(143, 218, 159);
 }
 .main_first{
-    width: 80%;
+    width: 98%;
+    height: 70vh;
     display: grid;
-    grid-template-columns:1fr 1fr ;
-    
-    margin:10vh auto;
+    grid-template-columns:0.7fr 1fr  ;
+    margin:8vh auto;
     border: 1px solid black;
     background-color: rgb(156, 145, 216);
     border-radius:10px ;
     box-shadow: 5px 6px  rgb(86, 151, 137);
 }
+.main_first h1,.main_first p,.main_first button{
+    margin: 0px;
+    
+}
+.main_first h1{
+    text-align: center;
+    padding: 10% 0px 0px 0px;
+    margin-top:9vh;
+    
+    font-family: var(--heading);
+    font-size: 4vw;
+}
+.main_first p{
+    height: max-content;
+    text-align: center;
+    font-family: var(--heading);
+    
+    font-size: 2vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main_first button{
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgb(71, 12, 71);
+    font-family: var(--link-font);
+    font-size: 50px;
+    transition: all 0.3s linear;
+}
+.main_first a{
+    text-decoration: none;
+    color: rgb(184, 116, 184);
+}
+.main_first button:hover{
+    background-color: rgb(158, 65, 158);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 2px wheat;
+}
+.main_first a:hover{
+    color: aliceblue;
+}
+.text{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .main_first img{
-    width: 500px;
+    width: 35vw;
+    justify-self: center;
+    align-self: center;
+    border: 10px solid whitesmoke;
+    transform: rotate(3deg);
+    z-index: 2;
+
+}
+.main_first img:hover{
+    transform: rotate(0deg);
+
+}
+#imge:hover{
+    display: none;
+}
+#imge{
+    width: 36vw;
+    
+    transform:rotate(-3deg);
+    position: relative;
+    bottom: 80%;
+    left: 120%;
+    z-index: 1;
+}
+.trending{
+    border-radius: 10px;
+    background-color: rgb(202, 194, 194);
+    color: rgb(58, 56, 56);
+    height:40vh;
+    font-family: var(--link-font);
+    width: 98%;
+    margin: auto;
+}
+.trending h1{
+    
+    width: max-content;
+    padding:10px 0px 0px 15px;
+}
+
+.three_div{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content:space-around;
+    
+    
+}
+.three_div div{
+    width:30vw;
+    height: 25vh;
+    background-image: url(second.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+.headings{
+    visibility: hidden;
+}
+
+#pondi{
+    background-image: url('./back_images/pondi.jpg');
+}
+#tamil{
+    background-image: url('./back_images/tamil.jpg');
+}
+#capri{
+    background-image: url('./back_images/Capri.jpg');
+}
+#mad{
+    background-image: url('./back_images/south_af.jpg');
+}
+#cape{
+    background-image: url('./back_images/cape.jpg');
+}
+#raj{
+    background-image: url('./back_images/Raj.jpg');
+}
+#sikkim{
+    background-image: url('./back_images/sikkim.jpg');
+}
+#odisha{
+    background-image: url('./back_images/odisha.jpg');
+}
+.three_div div h1,.three_div div h2{
+    
+    padding: 0px;
+    border: 2px solid black;
+}
+.bottom{
+    background-color: rgb(47, 46, 48);
+    color: white;
+}
+.bottom h1{
+    text-align: center;
+}
+.bottom img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    width: max-content;
+    margin: auto;
 }
