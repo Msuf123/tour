@@ -141,3 +141,36 @@ textarea{
     border-radius: 10px;
     border: 2px solid rgb(236, 213, 213);
 }
+.flight-flex{
+    display: flex;
+    border: 2px solid white;
+    justify-content: space-between;
+    height: 50%;
+    padding: 10px;
+}
+.flight-ans{
+    border: 2px solid rgb(156, 76, 76);
+    max-width: 83%;
+}
+.flight-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgb(216, 198, 198);
+}
+.flight-button button{
+    background-color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    width:max(90px,14vw) ;
+    padding:20px;
+    color: #fff;
+    transition: all 0.3s linear;
+    
+}
+.flight-button button:hover{
+    background-color: #1f3b6d;
+}

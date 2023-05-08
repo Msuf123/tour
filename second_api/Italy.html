@@ -5,6 +5,7 @@
     <title>Kerala</title>
     <link href="./kerla.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./data.js" defer></script>
 </head>
 <body>
     <div class="nav">
@@ -58,7 +59,19 @@
 </div>
 <div class="flight">
     <h1>Flight data</h1>
-    <h3>working with the api</h3>
+    <div class="flight-flex">
+      <div class="flight-ans">
+        <h3>Pls select a departure date</h3>
+        <form action="/action_page.php">
+            
+            <input type="date" id="date" name="birthday">
+            
+          </form>
+      </div>
+      <div class="flight-button">
+        <button type="button" id="run">Fetch</button>
+      </div>
+    </div>
 </div>
 <hr>
 <h2>Comments</h2>

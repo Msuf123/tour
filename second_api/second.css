@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(9, 8, 15);
+}
+.parent{
+    background-image: linear-gradient(144deg,#0d698d, #305579 50%,#261191);
+    width: 98%;
+    border-radius: 10px;
+    margin: 2vh auto;
+    height: 96vh;
+    position: relative;
+}
+
+
+.button-64 {
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #1c3296 50%,#2b00eb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+.loader {
+    position: absolute;
+    top: 45%;  /* position the top  edge of the element at the middle of the parent */
+    left: 45%; /* position the left edge of the element at the middle of the parent */
+    
+    transform: translate(50%, 50%);
+    width: 88px;
+    height: 88px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+    .field{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 60%;
+        height: 90%;
+        margin-top: 20px;
+        background-color: transparent;
+        border-right:2px solid white ;
+    }
+   .input{
+    padding: 3px 6px;
+    
+    width: 250px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(247, 248, 248);
+    height: 36px;
+    appearance: none;
+    transition: border 0.15s ease 0s;}
+    .input:focus{
+        outline: none;
+        box-shadow: none;
+        border-color:  rgb(37, 72, 136);
+    }
+    .the_unit{
+        background-color: transparent;
+        margin: 70px 30px;
+    }
+    .the_unit h3{
+        margin: 0px;
+        font-size: min(40px,4vw);
+        width: max-content;
+        
+    }
+    .the_unit input{
+        margin:0px
+    }
+    
+
