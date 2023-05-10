@@ -12,7 +12,8 @@ let states=[]
 let back=document.getElementById('backk')
 var headers = new Headers();
 headers.append("X-CSCAPI-KEY", "MVdOdTlWejdWcGtxb2ViU3NiU3lKRk1qNmdySHZCRjEyaWwyN1ZvRw==");
-
+countrry.value='';
+statee.value=''
 var requestOptions = {
    method: 'GET',
    headers: headers,
@@ -21,6 +22,8 @@ var requestOptions = {
 subbmit.style.display='none'
 next_div.style.display='none'
 let a=async()=>{
+   array=[]
+ states=[]
   next_div.style.display='none'
   loading.style.display="block";
   div.style.display="none";
@@ -102,7 +105,11 @@ console.log(document.getElementById("optios").innerHTML)
 subbmit.style.display='block'
 next.style.display='none'
 next_div_c.innerHTML=`Country:${countrry.value}`
-next_div_s.innerHTML=`State:${statee.value}`
+if(statee.value!==''){
+next_div_s.innerHTML=`State:${statee.value}`}
+else{
+  next_div_s.innerHTML=`No iso2 code`
+}
 }
 )
 
@@ -112,5 +119,5 @@ subbmit.addEventListener('click',()=>{
 
 
 })
-back.addEventListener('click',a)
+back.addEventListener('click',()=>{location.reload();})
 next.addEventListener('click',b)
