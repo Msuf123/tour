@@ -1,13 +1,15 @@
 body{
     background-color: rgb(9, 8, 15);
+    height: 100vh;
 }
 .parent{
     background-image: linear-gradient(144deg,#0d698d, #305579 50%,#261191);
     width: 98%;
     border-radius: 10px;
-    margin: 2vh auto;
+    margin: 1vh auto;
     height: 96vh;
     position: relative;
+    z-index: 1;
 }
 
 
@@ -92,8 +94,8 @@ body{
         height: 90%;
         margin-top: 20px;
         background-color: transparent;
-        border: 2px solid white;
-        border-right:2px solid white ;
+        border-radius: 10px;
+        border-right:6px solid white ;
         position: relative;
     }
    .input{
@@ -203,4 +205,37 @@ body{
   transform:  translate(50%,-40%);
   display: flex;
 
+}
+#result{
+  z-index: 2;
+  width: 34%;
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  height: 70vh;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Kanit', sans-serif;
+}
+#result h1{
+  font-size: max(1.6em,2.5vw);
+  text-align: center;
+ 
+}
+#result h2{
+  font-size: max(1.4em,2.2vw);
+  text-align: center;
+  
+}
+#flight_data{
+  background-color: rgb(14, 14, 14);
+  width: 80%;
+  margin: 10% auto;
+  height: 20%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

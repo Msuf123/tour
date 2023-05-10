@@ -3,8 +3,13 @@ let div=document.getElementById('inputdiv')
 let next=document.getElementById('next')
 let countrry=document.getElementsByClassName('input')[0]
 let statee=document.getElementsByClassName('input')[1]
+let subbmit=document.getElementById('submit')
+let next_div=document.getElementById('result')
+let next_div_c=document.getElementById('next_div_c')
+let next_div_s=document.getElementById('next_div_s')
 let array=[]
 let states=[]
+let back=document.getElementById('backk')
 var headers = new Headers();
 headers.append("X-CSCAPI-KEY", "MVdOdTlWejdWcGtxb2ViU3NiU3lKRk1qNmdySHZCRjEyaWwyN1ZvRw==");
 
@@ -13,7 +18,11 @@ var requestOptions = {
    headers: headers,
    redirect: 'follow'
 };
+subbmit.style.display='none'
+next_div.style.display='none'
 let a=async()=>{
+  next_div.style.display='none'
+  loading.style.display="block";
   div.style.display="none";
 await fetch("https://api.countrystatecity.in/v1/countries", requestOptions)
 .then(response => response.json())
@@ -90,9 +99,18 @@ for (let i = 0; i < states.length; i++)
 
 document.getElementById("optios").innerHTML = option;
 console.log(document.getElementById("optios").innerHTML)
+subbmit.style.display='block'
+next.style.display='none'
+next_div_c.innerHTML=`Country:${countrry.value}`
+next_div_s.innerHTML=`State:${statee.value}`
 }
 )
 
 .catch(error => console.log('error', error));}
- 
+subbmit.addEventListener('click',()=>{
+  next_div.style.display='flex'
+
+
+})
+back.addEventListener('click',a)
 next.addEventListener('click',b)
