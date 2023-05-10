@@ -11,21 +11,24 @@
         
         <div class="parent">
             <span class="loader" id="loading"></span>
-            <div class="field">
+            <div class="field" id="inputdiv">
                 <div class="the_unit">
                 
-                <input type="text" list="country" class="input" placeholder="Enter the name of country">
+                <input type="text" list="country"  class="input " placeholder="Enter the name of country">
                 <datalist id="country">
                     <div id="options"></div>
                   </datalist>
             </div>
             <div class="the_unit">
                 
-                <input type="text" class="input" placeholder="Enter the name of state">
+                <input type="text" id="state" list="stater"class="input state" placeholder="Enter the name of state">
+                <datalist id="stater">
+                    <div id="optios"></div>
+                  </datalist>
             </div>
             <div class="the_unit">
                 
-                <input type="text" list="countrry" class="input" placeholder="enter the name of city">
+                <input type="text" list="countrry"  class="input city" placeholder="enter the name of city">
                 <datalist id="countrry">
                     <option>Volvo</option>
                     <option>Vaab</option>
@@ -36,6 +39,10 @@
                     <option>Vercedes</option>
                     <option>Vudi</option>
                   </datalist>
+            </div>
+            <div id="buttons">
+            <button class="button-61" role="button">Back</button>
+            <button class="button-61" role="button" id="next">Next</button>
             </div>
             </div>
         <button type="button" class="button-64" role="button"><span class="text">&larr;</span></button>
