@@ -105,6 +105,7 @@ console.log(document.getElementById("optios").innerHTML)
 subbmit.style.display='block'
 next.style.display='none'
 next_div_c.innerHTML=`Country:${countrry.value}`
+
 if(statee.value!==''){
 next_div_s.innerHTML=`State:${statee.value}`}
 else{
@@ -115,9 +116,16 @@ else{
 
 .catch(error => console.log('error', error));}
 subbmit.addEventListener('click',()=>{
-  next_div.style.display='flex'
-
-
+  next_div.style.display='none'
+  loading.style.display="block";
+  div.style.display="none";
+  //next_div.style.display='flex'
+  next_div_s.innerHTML=`State:${statee.value}`
+  setTimeout(()=>{
+    next_div.style.display='flex'
+  loading.style.display="none";
+  div.style.display="block";
+  },1000)
 })
 back.addEventListener('click',()=>{location.reload();})
 next.addEventListener('click',b)
