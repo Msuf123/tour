@@ -129,3 +129,9 @@ subbmit.addEventListener('click',()=>{
 })
 back.addEventListener('click',()=>{location.reload();})
 next.addEventListener('click',b)
+console.log('hi')
+//flight_number
+// let m= async()=>{
+//  await fetch('http://api.aviationstack.com/v1/flights?dep_iata=DEL&arr_iata=COK&access_key=744fd761a67d36da2424d144c27cb3ca').then(a=>{console.log(a.json())})
+// }
+// m()

@@ -191,20 +191,32 @@ textarea{
 }
 .flight-flex{
     display: flex;
-    border: 2px solid white;
+    
     justify-content: space-between;
     height: 50%;
     padding: 10px;
 }
 .flight-ans{
-    border: 2px solid rgb(156, 76, 76);
+    
     max-width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flight-ans p{
+    padding: 0px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    width: max-content;
+}
+.flight-ans p span{
+    margin: 0px 10px;
 }
 .flight-button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid rgb(216, 198, 198);
+   
 }
 .flight-button button{
     background-color: black;
